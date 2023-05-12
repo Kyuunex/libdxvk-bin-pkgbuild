@@ -22,8 +22,7 @@ package_libdxvk-bin() {
 	provides+=(libdxvk)
 	conflicts=(libdxvk)
 
-	find lib -name '*.so' \
-		-exec install -Dm644 '{}' -t "$pkgdir/usr/lib/" \;
+	find lib -name '*.so' -exec install -Dm644 '{}' -t "$pkgdir/usr/lib/" \;
 	install -Dm644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname"
 }
 
@@ -33,7 +32,6 @@ package_lib32-libdxvk-bin() {
 	provides+=(lib32-libdxvk)
 	conflicts=(lib32-libdxvk)
 
-	find lib32 -name '*.so' \
-		-exec install -Dm644 '{}' -t "$pkgdir/usr/lib32/" \;
+	find lib32 -name '*.so' -exec install -Dm644 '{}' -t "$pkgdir/usr/lib32/" \;
 	install -Dm644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname"
 }
