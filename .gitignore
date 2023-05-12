@@ -1,0 +1,5 @@
+pkg/
+src/
+*libdxvk-bin-*.pkg.*
+dxvk-native-*-steamrt-sniper.tar.gz
+LICENSE
