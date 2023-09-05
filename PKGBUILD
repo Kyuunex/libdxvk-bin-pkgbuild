@@ -1,6 +1,6 @@
 pkgbase=libdxvk-bin
 pkgname=('libdxvk-bin' 'lib32-libdxvk-bin')
-pkgver=2.2
+pkgver=2.3
 pkgrel=1
 pkgdesc="Native Linux port of DXVK to allow usage without WINE"
 arch=('x86_64')
@@ -12,10 +12,8 @@ source=(
 	"$url/releases/download/v$pkgver/dxvk-native-$pkgver-steamrt-sniper.tar.gz"
 	"https://raw.githubusercontent.com/doitsujin/dxvk/v$pkgver/LICENSE"
 )
-sha256sums=(
-	'0d9ad3214a976ba1e015cc8c2327875e7d2f824748878d8523faf85920b9f78c'
-	'03ca4af84f5cd28cef3ed3f1ef4d17996992d35ccdbe82b29cc020ca02c16f3d'
-)
+sha256sums=('c69b38c21b316300eedf927910c3881f52baaa9df3ac559478e4cced07c079ad'
+            '03ca4af84f5cd28cef3ed3f1ef4d17996992d35ccdbe82b29cc020ca02c16f3d')
 
 package_libdxvk-bin() {
 	depends=(sdl2 vulkan-icd-loader)
